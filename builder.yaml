@@ -1,0 +1,5 @@
+components:
+  - name: site
+    role: static
+    output: .
+    path: /

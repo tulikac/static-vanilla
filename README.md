@@ -20,6 +20,16 @@ With the local server running:
 .\scripts\verify.ps1 -BaseUrl http://localhost:8080
 ```
 
+## Builder Apps configuration
+
+The root `builder.yaml` declares one public static component. The site has no
+build step, so `output: .` serves the repository root directly.
+
+The current component-based manifest does not include the previous manifest
+fields for `version`, `autoDeploy`, `spaFallback`, or per-file cache headers.
+Those behaviors must be observed from the deployed service rather than declared
+in this sample.
+
 ## Files and routes
 
 | Route | Source | Purpose |
