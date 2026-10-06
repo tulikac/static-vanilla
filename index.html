@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Framework-free static site for Builder Apps shape testing.">
+    <title>Vanilla static site</title>
+    <link rel="stylesheet" href="/assets/styles.v1.css">
+    <script src="/assets/app.v1.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <p class="eyebrow">Builder Apps shape test</p>
+      <h1>Vanilla static site is running</h1>
+      <p>
+        This framework-free site is served directly from static HTML, CSS,
+        JavaScript, and JSON files.
+      </p>
+
+      <nav aria-label="Test routes">
+        <a class="button" href="/products/widget-1/">Open the deep route</a>
+        <a href="/health.json">View static health</a>
+        <a href="/version.json">View version metadata</a>
+      </nav>
+
+      <section aria-labelledby="deployment-heading">
+        <h2 id="deployment-heading">Deployment details</h2>
+        <dl>
+          <div><dt>Application</dt><dd id="app-name">static-vanilla</dd></div>
+          <div><dt>Version</dt><dd id="app-version">Loading...</dd></div>
+          <div><dt>Pattern</dt><dd id="app-pattern">Loading...</dd></div>
+          <div><dt>Deployment</dt><dd id="deployment-marker">Loading...</dd></div>
+        </dl>
+        <p id="metadata-status" class="status" role="status">
+          Loading version metadata...
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
